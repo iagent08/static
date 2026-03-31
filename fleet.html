@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Fleet | GTenTransport</title>
+    <meta name="description"
+        content="Explore GTenTransport's premium executive fleet of luxury SUVs, sedans, and sprinter vans.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo text-gold">GTenTransport.</a>
+            <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fleet.html" class="active">Our Fleet</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="book.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn btn-outline" id="btn-signin">Sign In</button>
+                <a href="book.html" class="btn btn-primary">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="modal" id="auth-modal">
+        <div class="modal-content glass-panel">
+            <span class="close-modal">&times;</span>
+            <h2 class="text-center">Welcome Back</h2>
+            <p class="text-center" style="margin-bottom: 2rem; color: var(--color-gray-light);">Sign in to your account
+            </p>
+            <form class="auth-form" id="auth-form">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="name@example.com" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Sign In</button>
+            </form>
+        </div>
+    </div>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="text-gold">Our Executive Fleet</h1>
+                <p>Choose from our meticulously maintained selection of world-class vehicles. All rates are competitive
+                    and transparently listed in GHS.</p>
+            </div>
+        </section>
+
+        <section class="section" style="padding-top: 2rem;">
+            <div class="container">
+
+                <!-- Executive Sedans -->
+                <h2 class="fleet-category-title">Executive Sedans</h2>
+                <div class="fleet-grid">
+                    <div class="fleet-card">
+                        <div class="fleet-img"
+                            style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4b/Cadillac_CT5.jpg');">
+                        </div>
+                        <div class="fleet-info">
+                            <h3>Cadillac CT5</h3>
+                            <p class="fleet-class">Premium Sedan</p>
+                            <ul class="fleet-specs">
+                                <li><i class="fa-solid fa-user text-gold"></i> Max 3 Pax</li>
+                                <li><i class="fa-solid fa-suitcase text-gold"></i> 2 Bags</li>
+                            </ul>
+                            <div class="fleet-rate">GHS 1,000 / hr</div>
+                            <a href="book.html?vehicle=cadillac-ct5" class="btn btn-outline mt-2"
+                                style="width: 100%; border-color: var(--color-gold); color: var(--color-gold);">Book
+                                This Vehicle</a>
+                        </div>
+                    </div>
+                    <div class="fleet-card">
+                        <div class="fleet-img"
+                            style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Lexus_LS_500_VXFA50_Premier_Manganese_Luster_01.jpg/1280px-Lexus_LS_500_VXFA50_Premier_Manganese_Luster_01.jpg');">
+                        </div>
+                        <div class="fleet-info">
+                            <h3>Lexus LS 500</h3>
+                            <p class="fleet-class">Executive Sedan</p>
+                            <ul class="fleet-specs">
+                                <li><i class="fa-solid fa-user text-gold"></i> Max 3 Pax</li>
+                                <li><i class="fa-solid fa-suitcase text-gold"></i> 2 Bags</li>
+                            </ul>
+                            <div class="fleet-rate">GHS 1,200 / hr</div>
+                            <a href="book.html?vehicle=lexus-ls" class="btn btn-outline mt-2"
+                                style="width: 100%; border-color: var(--color-gold); color: var(--color-gold);">Book
+                                This Vehicle</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Luxury SUVs -->
+                <h2 class="fleet-category-title">Luxury SUVs</h2>
+                <div class="fleet-grid">
+                    <div class="fleet-card">
+                        <div class="fleet-img"
+                            style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/2021_Cadillac_Escalade_ESV_4WD_Premium_Luxury_in_Satin_Steel_Metallic%2C_front_right.jpg/1280px-2021_Cadillac_Escalade_ESV_4WD_Premium_Luxury_in_Satin_Steel_Metallic%2C_front_right.jpg');">
+                        </div>
+                        <div class="fleet-info">
+                            <h3>Cadillac Escalade SUV</h3>
+                            <p class="fleet-class">Luxury SUV</p>
+                            <ul class="fleet-specs">
+                                <li><i class="fa-solid fa-user text-gold"></i> Max 6 Pax</li>
+                                <li><i class="fa-solid fa-suitcase text-gold"></i> 6 Bags</li>
+                            </ul>
+                            <div class="fleet-rate">GHS 2,000 / hr</div>
+                            <a href="book.html?vehicle=escalade" class="btn btn-outline mt-2"
+                                style="width: 100%; border-color: var(--color-gold); color: var(--color-gold);">Book
+                                This Vehicle</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Executive Vans -->
+                <h2 class="fleet-category-title">Executive Vans</h2>
+                <div class="fleet-grid">
+                    <div class="fleet-card">
+                        <div class="fleet-img"
+                            style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Mercedes-Benz_VS30_Sprinter_519_CDI_Black_%281%29.jpg/1280px-Mercedes-Benz_VS30_Sprinter_519_CDI_Black_%281%29.jpg');">
+                        </div>
+                        <div class="fleet-info">
+                            <h3>Mercedes-Benz Sprinter</h3>
+                            <p class="fleet-class">Executive Sprinter</p>
+                            <ul class="fleet-specs">
+                                <li><i class="fa-solid fa-user text-gold"></i> Max 12 Pax</li>
+                                <li><i class="fa-solid fa-suitcase text-gold"></i> 10 Bags</li>
+                            </ul>
+                            <div class="fleet-rate">GHS 2,500 / hr</div>
+                            <a href="book.html?vehicle=sprinter" class="btn btn-outline mt-2"
+                                style="width: 100%; border-color: var(--color-gold); color: var(--color-gold);">Book
+                                This Vehicle</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3 class="text-gold">GTenTransport.</h3>
+                <p>Experience unmatched luxury transport and executive chauffeur services across Ghana.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fleet.html">Our Fleet</a></li>
+                    <li><a href="book.html">Book a Ride</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i> +233 50 123 4567</li>
+                    <li><i class="fa-solid fa-envelope"></i> booking@gtentransport.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 GTenTransport. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTenTransport | Premium Executive Chauffeur Services</title>
+    <meta name="description"
+        content="Experience unmatched luxury transport and executive chauffeur services across Ghana.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo text-gold">GTenTransport.</a>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="fleet.html">Our Fleet</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="book.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn btn-outline" id="btn-signin">Sign In</button>
+                <a href="book.html" class="btn btn-primary">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Auth Modal -->
+    <div class="modal" id="auth-modal">
+        <div class="modal-content glass-panel">
+            <span class="close-modal">&times;</span>
+            <h2 class="text-center">Welcome Back</h2>
+            <p class="text-center" style="margin-bottom: 2rem; color: var(--color-gray-light);">Sign in to your account
+            </p>
+            <form class="auth-form" id="auth-form">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="name@example.com" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Sign In</button>
+            </form>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1 class="hero-title text-white">Experience Unmatched Luxury Transport</h1>
+                <p class="hero-subtitle">Premium executive chauffeur services across Ghana. Reliable, safe, and
+                    sophisticated.</p>
+
+                <!-- Quick Booking Widget -->
+                <div class="quick-booking glass-panel">
+                    <form class="booking-grid" action="book.html">
+                        <div class="input-group">
+                            <label><i class="fa-solid fa-location-dot text-gold"></i> Pick-up Location</label>
+                            <input type="text" list="locations" placeholder="Enter pick-up address..." required>
+                        </div>
+                        <div class="input-group">
+                            <label><i class="fa-solid fa-location-crosshairs text-gold"></i> Drop-off Location</label>
+                            <input type="text" list="locations" placeholder="Enter destination..." required>
+                        </div>
+                        <div class="input-group">
+                            <label><i class="fa-regular fa-calendar text-gold"></i> Date</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="input-group">
+                            <label><i class="fa-regular fa-clock text-gold"></i> Time</label>
+                            <input type="time" required>
+                        </div>
+                        <div class="input-group" style="justify-content: flex-end;">
+                            <button type="submit" class="btn btn-primary"
+                                style="height: 100%; width: 100%; border-radius: var(--border-radius-sm);">Book
+                                Ride</button>
+                        </div>
+                    </form>
+                    <datalist id="locations">
+                        <option value="Kotoka International Airport (KIA)">
+                        <option value="Cantonments, Accra">
+                        <option value="East Legon, Accra">
+                        <option value="Osu, Accra">
+                        <option value="Labadi Beach Hotel">
+                        <option value="Kempinski Hotel Gold Coast City">
+                        <option value="Aburi Mountains">
+                        <option value="Kumasi, Ashanti Region">
+                    </datalist>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Overview -->
+        <section class="section services-section" id="services">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h2 class="text-gold">Our Premium Services</h2>
+                    <p>Tailored transportation solutions for every executive need.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card glass-panel text-center">
+                        <i class="fa-solid fa-plane-arrival service-icon"></i>
+                        <h3>Airport Transfers</h3>
+                        <p>Seamless and punctual pickups from Kotoka International Airport. Flight monitoring included.
+                        </p>
+                        <a href="book.html" class="text-gold mt-1"
+                            style="display:inline-block; margin-top:1rem; font-weight: 500;">Learn More &rarr;</a>
+                    </div>
+                    <div class="service-card glass-panel text-center">
+                        <i class="fa-solid fa-user-tie service-icon"></i>
+                        <h3>Corporate Travel</h3>
+                        <p>Dedicated executive chauffeurs for your business meetings and roadshows across Ghana.</p>
+                        <a href="book.html" class="text-gold mt-1"
+                            style="display:inline-block; margin-top:1rem; font-weight: 500;">Learn More &rarr;</a>
+                    </div>
+                    <div class="service-card glass-panel text-center">
+                        <i class="fa-solid fa-champagne-glasses service-icon"></i>
+                        <h3>Special Events</h3>
+                        <p>Make your weddings, galas, and VIP events memorable with our top-tier luxury vehicles.</p>
+                        <a href="book.html" class="text-gold mt-1"
+                            style="display:inline-block; margin-top:1rem; font-weight: 500;">Learn More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fleet Teaser -->
+        <section class="section fleet-teaser-section" style="background-color: var(--color-charcoal);">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h2 class="text-gold">Featured Fleet</h2>
+                    <p>Experience the pinnacle of automotive engineering and comfort.</p>
+                </div>
+                <div class="fleet-grid">
+                    <div class="fleet-card">
+                        <div class="fleet-img"
+                            style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/2021_Cadillac_Escalade_ESV_4WD_Premium_Luxury_in_Satin_Steel_Metallic%2C_front_right.jpg/1280px-2021_Cadillac_Escalade_ESV_4WD_Premium_Luxury_in_Satin_Steel_Metallic%2C_front_right.jpg');">
+                        </div>
+                        <div class="fleet-info">
+                            <h3>Cadillac Escalade SUV</h3>
+                            <p class="fleet-class">Luxury SUV</p>
+                            <ul class="fleet-specs">
+                                <li><i class="fa-solid fa-user text-gold"></i> Max 6 Pax</li>
+                                <li><i class="fa-solid fa-suitcase text-gold"></i> 6 Bags</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="fleet-card">
+                        <div class="fleet-img"
+                            style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Lexus_LS_500_VXFA50_Premier_Manganese_Luster_01.jpg/1280px-Lexus_LS_500_VXFA50_Premier_Manganese_Luster_01.jpg');">
+                        </div>
+                        <div class="fleet-info">
+                            <h3>Lexus LS 500</h3>
+                            <p class="fleet-class">Executive Sedan</p>
+                            <ul class="fleet-specs">
+                                <li><i class="fa-solid fa-user text-gold"></i> Max 3 Pax</li>
+                                <li><i class="fa-solid fa-suitcase text-gold"></i> 2 Bags</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="fleet-card">
+                        <div class="fleet-img"
+                            style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Mercedes-Benz_VS30_Sprinter_519_CDI_Black_%281%29.jpg/1280px-Mercedes-Benz_VS30_Sprinter_519_CDI_Black_%281%29.jpg');">
+                        </div>
+                        <div class="fleet-info">
+                            <h3>Mercedes-Benz Sprinter</h3>
+                            <p class="fleet-class">Executive Van</p>
+                            <ul class="fleet-specs">
+                                <li><i class="fa-solid fa-user text-gold"></i> Max 12 Pax</li>
+                                <li><i class="fa-solid fa-suitcase text-gold"></i> 10 Bags</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center" style="margin-top: 3rem;">
+                    <a href="fleet.html" class="btn btn-outline text-gold" style="border-color: var(--color-gold);">View
+                        Entire Fleet</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="section testimonials-section">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h2 class="text-gold">Client Experiences</h2>
+                    <p>Don't just take our word for it.</p>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card glass-panel" style="background: rgba(20,20,20,0.8);">
+                        <div class="stars text-gold mb-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p>"Outstanding service from KIA to our hotel in Cantonments. The Cadillac Escalade was
+                            immaculate and the chauffeur was highly professional."</p>
+                        <div class="client-info mt-2"
+                            style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem;">
+                            <h4 style="margin-bottom: 0.2rem;">James Harrington</h4>
+                            <span class="text-gray-light" style="font-size: 0.9rem;">Corporate Executive</span>
+                            <div class="platform-rating mt-1"
+                                style="display: flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.05); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.85rem; width: fit-content; margin-top: 1rem;">
+                                <i class="fa-brands fa-tripadvisor text-gold"></i> Rated 5.0 on TripAdvisor
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card glass-panel" style="background: rgba(20,20,20,0.8);">
+                        <div class="stars text-gold mb-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p>"GTenTransport handled the logistics for our 3-day corporate roadshow in Accra flawlessly.
+                            Reliable and truly luxurious."</p>
+                        <div class="client-info mt-2"
+                            style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem;">
+                            <h4 style="margin-bottom: 0.2rem;">Sarah Mensah</h4>
+                            <span class="text-gray-light" style="font-size: 0.9rem;">Event Coordinator</span>
+                            <div class="platform-rating mt-1"
+                                style="display: flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.05); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.85rem; width: fit-content; margin-top: 1rem;">
+                                <i class="fa-brands fa-google text-gold"></i> Rated 5.0 on Google
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Premium Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3 class="text-gold">GTenTransport.</h3>
+                <p>Experience unmatched luxury transport and executive chauffeur services across Ghana.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fleet.html">Our Fleet</a></li>
+                    <li><a href="book.html">Book a Ride</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i> +233 50 123 4567</li>
+                    <li><i class="fa-solid fa-envelope"></i> booking@gtentransport.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 GTenTransport. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

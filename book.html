@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Ride | GTenTransport</title>
+    <meta name="description" content="Book your luxury executive transport in Ghana today.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo text-gold">GTenTransport.</a>
+            <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fleet.html">Our Fleet</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="book.html" class="active">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn btn-outline" id="btn-signin">Sign In</button>
+                <a href="book.html" class="btn btn-primary">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="modal" id="auth-modal">
+        <div class="modal-content glass-panel">
+            <span class="close-modal">&times;</span>
+            <h2 class="text-center">Welcome Back</h2>
+            <p class="text-center" style="margin-bottom: 2rem; color: var(--color-gray-light);">Sign in to your account
+            </p>
+            <form class="auth-form" id="auth-form">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="name@example.com" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Sign In</button>
+            </form>
+        </div>
+    </div>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="text-gold">Book Your Ride</h1>
+                <p>Experience seamless, luxury transportation. Fill out the details below and we will confirm your
+                    booking shortly.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container booking-page-grid">
+                <!-- Left: Form -->
+                <div class="booking-form-container glass-panel">
+                    <div class="progress-container" data-step="1">
+                        <div class="progress-bar" id="progress-bar"></div>
+                        <div class="progress-steps text-gray-light">
+                            <span class="step active">1. Route</span>
+                            <span class="step">2. Vehicle</span>
+                            <span class="step">3. Details</span>
+                        </div>
+                    </div>
+
+                    <form id="multi-step-form" class="shadcn-form">
+                        <!-- Step 1 -->
+                        <div class="form-step active">
+                            <h3 class="mb-1 text-white">Route Details</h3>
+                            <div class="form-grid">
+                                <div class="input-group">
+                                    <label for="pickup">Pick-up Location <span class="text-gold">*</span></label>
+                                    <input type="text" id="pickup" required placeholder="Enter pick-up address">
+                                </div>
+                                <div class="input-group">
+                                    <label for="dropoff">Drop-off Location <span class="text-gold">*</span></label>
+                                    <input type="text" id="dropoff" required placeholder="Enter destination">
+                                </div>
+                                <div class="input-group">
+                                    <label for="date">Date <span class="text-gold">*</span></label>
+                                    <input type="date" id="date" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="time">Time <span class="text-gold">*</span></label>
+                                    <input type="time" id="time" required>
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-primary btn-next">Continue to Vehicle</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="form-step">
+                            <h3 class="mb-1 text-white">Vehicle Selection</h3>
+                            <div class="input-group">
+                                <label for="vehicle">Select Category <span class="text-gold">*</span></label>
+                                <select id="vehicle" required>
+                                    <option value="" disabled selected>Select a vehicle class...</option>
+                                    <option value="cadillac-ct5">Cadillac CT5 (GHS 1,000/hr)</option>
+                                    <option value="lexus-ls">Lexus LS 500 (GHS 1,200/hr)</option>
+                                    <option value="escalade">Cadillac Escalade SUV (GHS 2,000/hr)</option>
+                                    <option value="sprinter">Mercedes-Benz Sprinter (GHS 2,500/hr)</option>
+                                </select>
+                            </div>
+                            <div class="form-actions space-between">
+                                <button type="button" class="btn btn-outline btn-prev">Back</button>
+                                <button type="button" class="btn btn-primary btn-next">Continue to Details</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="form-step">
+                            <h3 class="mb-1 text-white">Personal Details</h3>
+                            <div class="form-grid">
+                                <div class="input-group">
+                                    <label for="fname">First Name <span class="text-gold">*</span></label>
+                                    <input type="text" id="fname" required placeholder="John">
+                                </div>
+                                <div class="input-group">
+                                    <label for="lname">Last Name <span class="text-gold">*</span></label>
+                                    <input type="text" id="lname" required placeholder="Doe">
+                                </div>
+                                <div class="input-group">
+                                    <label for="email-book">Email Address <span class="text-gold">*</span></label>
+                                    <input type="email" id="email-book" required placeholder="john@example.com">
+                                </div>
+                                <div class="input-group">
+                                    <label for="phone">Phone Number <span class="text-gold">*</span></label>
+                                    <input type="tel" id="phone" required placeholder="+233 50 123 4567">
+                                </div>
+                            </div>
+                            <div class="input-group mt-1">
+                                <label for="notes">Special Requests</label>
+                                <textarea id="notes" rows="4" placeholder="Any specific requirements..."></textarea>
+                            </div>
+                            <div class="form-actions space-between">
+                                <button type="button" class="btn btn-outline btn-prev">Back</button>
+                                <button type="submit" class="btn btn-primary text-black">Confirm Booking</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div id="booking-success" style="display: none; text-align: center; padding: 2rem 0;">
+                        <i class="fa-solid fa-circle-check text-gold"
+                            style="font-size: 4rem; margin-bottom: 1.5rem;"></i>
+                        <h3 class="text-white">Booking Request Received</h3>
+                        <p class="text-gray-light mt-1">Thank you. Our dispatch team will contact you shortly to confirm
+                            your reservation and arrange payment.</p>
+                        <button class="btn btn-outline mt-2" onclick="location.reload()">Book Another Ride</button>
+                    </div>
+                </div>
+
+                <!-- Right: Contact & Maps -->
+                <div class="contact-info-container">
+                    <div class="contact-card glass-panel" style="margin-bottom: 2rem;">
+                        <h3 class="text-gold mb-1 text-center">Get In Touch</h3>
+                        <ul class="contact-list">
+                            <li><i class="fa-solid fa-phone"></i> +233 50 123 4567</li>
+                            <li><i class="fa-solid fa-envelope"></i> booking@gtentransport.com</li>
+                            <li><i class="fa-solid fa-location-dot"></i> 14 Liberation Rd, Accra, Ghana</li>
+                        </ul>
+                        <hr style="border-color: rgba(255,255,255,0.1); margin: 2rem 0;">
+                        <h4 class="text-white text-center">Business Hours</h4>
+                        <p class="text-gray-light text-center mt-1">24/7 Dispatch Availability</p>
+                    </div>
+
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127072.1328994537!2d-0.2646633631980313!3d5.5912087224201385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9084b2b7a773%3A0xbed14ed8650e2dd3!2sAccra%2C%20Ghana!5e0!3m2!1sen!2sus!4v1711902465354!5m2!1sen!2sus"
+                            width="100%" height="300" style="border:0; border-radius: var(--border-radius-md);"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Premium Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3 class="text-gold">GTenTransport.</h3>
+                <p>Experience unmatched luxury transport and executive chauffeur services across Ghana.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fleet.html">Our Fleet</a></li>
+                    <li><a href="book.html">Book a Ride</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i> +233 50 123 4567</li>
+                    <li><i class="fa-solid fa-envelope"></i> booking@gtentransport.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 GTenTransport. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
